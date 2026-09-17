@@ -185,10 +185,11 @@ function App() {
           </p>
 
           <p>
-            I enjoy turning ideas into clean, functional
-            and visually engaging websites. I have
-            experience working with React, JavaScript,
-            HTML, CSS, PHP and WordPress.
+            I enjoy turning ideas into clean, functional and visually engaging websites.
+             I have professional experience in WordPress development and hands-on experience
+              with HTML, CSS, JavaScript and PHP.
+             I am currently building projects with
+              React and continuously developing my frontend development skills.
           </p>
 
         </div>
