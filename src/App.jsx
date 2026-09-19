@@ -71,7 +71,7 @@ function App() {
 
 
           <a 
-  href={`${import.meta.env.BASE_URL}SANTHIYA.pdf`}
+ href={`${import.meta.env.BASE_URL}SANTHIYA (1).pdf`}
   className="outline-button resume-button"
 >
   <span>View Resume</span>
