@@ -18,6 +18,8 @@ function App() {
           <a href="#skills">Skills</a>
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
+          <a href="#client-work">Client Work</a>
+          <a href="#training">Training</a>
           <a href="#contact">Contact</a>
         </div>
 
@@ -46,7 +48,7 @@ function App() {
           </h1>
 
           <h2>
-            React & WordPress Developer
+            Web Developer & WordPress Developer
           </h2>
 
           <p className="hero-description">
@@ -68,13 +70,13 @@ function App() {
             </a>
 
 
-            <a
-              href="/SANTHIYA.pdf"
-              className="outline-button resume-button"
-            >
-              <span>View Resume</span>
-              <span>↗</span>
-            </a>
+          <a 
+  href={`${import.meta.env.BASE_URL}SANTHIYA.pdf`}
+  className="outline-button resume-button"
+>
+  <span>View Resume</span>
+  <span>↗</span>
+</a>
 
 
             <a
@@ -129,10 +131,19 @@ function App() {
 
             {/* PHOTO PLACEHOLDER */}
 
-            <div className="profile-placeholder">
-            <img src="/profile-photo.png" alt="Santhiya - Web Developer" />
-            </div>
-
+             <div className="profile-placeholder">
+  <img
+    src={`${import.meta.env.BASE_URL}profile-photo.png`}
+    alt="Santhiya - Web Developer"
+    style={{
+      width: "190px",
+      height: "190px",
+      objectFit: "cover",
+      borderRadius: "50%",
+      display: "block"
+    }}
+  />
+</div>
 
             <div className="card-bottom">
               <span>React</span>
@@ -221,50 +232,56 @@ function App() {
 
           <div className="skill-card">
             <span>01</span>
-            <h3>HTML5</h3>
-            <p>Semantic & structured web pages</p>
-          </div>
-
-
-          <div className="skill-card">
-            <span>02</span>
-            <h3>CSS3</h3>
-            <p>Responsive layouts & animations</p>
-          </div>
-
-
-          <div className="skill-card">
-            <span>03</span>
-            <h3>JavaScript</h3>
-            <p>Interactive web functionality</p>
-          </div>
-
-
-          <div className="skill-card">
-            <span>04</span>
-            <h3>React.js</h3>
-            <p>Component-based interfaces</p>
-          </div>
-
-
-          <div className="skill-card">
-            <span>05</span>
-            <h3>Bootstrap</h3>
-            <p>Responsive UI development</p>
-          </div>
-
-
-          <div className="skill-card">
-            <span>06</span>
             <h3>WordPress</h3>
             <p>Custom websites & theme work</p>
           </div>
 
+          <div className="skill-card">
+            <span>02</span>
+            <h3>WooCommerce</h3>
+            <p>E-commerce & product setup</p>
+          </div>
+
+          <div className="skill-card">
+            <span>03</span>
+            <h3>Elementor</h3>
+            <p>Page building & responsive layouts</p>
+          </div>
+
+          <div className="skill-card">
+            <span>04</span>
+            <h3>HTML5</h3>
+            <p>Semantic & structured web pages</p>
+          </div>
+
+          <div className="skill-card">
+            <span>05</span>
+            <h3>CSS3</h3>
+            <p>Responsive layouts & styling</p>
+          </div>
+
+          <div className="skill-card">
+            <span>06</span>
+            <h3>JavaScript</h3>
+            <p>Interactive web functionality</p>
+          </div>
 
           <div className="skill-card">
             <span>07</span>
             <h3>PHP</h3>
-            <p>Backend customization</p>
+            <p>Backend & WordPress customization</p>
+          </div>
+
+          <div className="skill-card">
+            <span>08</span>
+            <h3>Bootstrap</h3>
+            <p>Responsive UI development</p>
+          </div>
+
+          <div className="skill-card">
+            <span>09</span>
+            <h3>React.js</h3>
+            <p>Component-based interfaces</p>
           </div>
 
         </div>
@@ -302,7 +319,7 @@ function App() {
           <div className="experience-details">
 
             <p className="experience-date">
-              OCT 2025 — AUG 2026
+              SEP 2025 — SEP 2026 · 1 YEAR
             </p>
 
             <h3>
@@ -314,13 +331,165 @@ function App() {
             </h4>
 
             <p>
-              Developed and customized e-commerce,
-              service-based and blog websites using
-              WordPress, Elementor, HTML, CSS, JavaScript
-              and PHP.
+              Independently developed and customized 16 client websites
+              across e-commerce, franchise and corporate/business sectors
+              using WordPress, Elementor, WooCommerce, HTML, CSS,
+              JavaScript and PHP.
             </p>
 
+            <ul className="experience-list">
+              <li>Built responsive WordPress websites based on client requirements.</li>
+              <li>Worked on WooCommerce product setup, product information sections and e-commerce pages.</li>
+              <li>Customized themes, plugins and website components using CSS, JavaScript and PHP.</li>
+              <li>Worked on responsive layouts, content updates, troubleshooting and front-end fixes.</li>
+              <li>Handled basic website performance and SEO-related improvements.</li>
+            </ul>
+
           </div>
+
+        </div>
+
+      </section>
+
+
+      {/* ================= CLIENT WORK ================= */}
+
+      <section
+        id="client-work"
+        className="section client-work-section"
+      >
+
+        <div className="section-heading">
+          <p>04 — CLIENT WORK</p>
+          <h2>
+            Websites I
+            <br />
+            <span>worked on.</span>
+          </h2>
+        </div>
+
+        <p className="client-work-intro">
+          Professional WordPress work completed during my previous role,
+          covering e-commerce, franchise and corporate websites.
+        </p>
+
+        <div className="client-category">
+          <div className="client-category-heading">
+            <span>01</span>
+            <h3>E-Commerce / WooCommerce</h3>
+          </div>
+
+          <div className="client-grid">
+            <a className="client-card" href="https://starsnithi.com/" target="_blank" rel="noopener noreferrer">
+              <span>01</span><h4>Stars Nithi</h4><p>WordPress / WooCommerce website</p><strong>Live Website ↗</strong>
+            </a>
+            <a className="client-card" href="https://madhifoods.in/" target="_blank" rel="noopener noreferrer">
+              <span>02</span><h4>Madhi Foods</h4><p>WordPress / WooCommerce website</p><strong>Live Website ↗</strong>
+            </a>
+            <div className="client-card">
+              <span>03</span><h4>Ayaan Health</h4><p>WordPress / WooCommerce website</p><strong>Website currently unavailable</strong>
+            </div>
+            <a className="client-card" href="https://amberhour.in/" target="_blank" rel="noopener noreferrer">
+              <span>04</span><h4>Amberhour</h4><p>WordPress / WooCommerce website</p><strong>Live Website ↗</strong>
+            </a>
+            <a className="client-card" href="https://hemakaivannam.com/" target="_blank" rel="noopener noreferrer">
+              <span>05</span><h4>Hema Kaivannam</h4><p>WordPress / WooCommerce website</p><strong>Live Website ↗</strong>
+            </a>
+            <a className="client-card" href="https://shop.hemakaivannam.com/" target="_blank" rel="noopener noreferrer">
+              <span>06</span><h4>Shop Hema Kaivannam</h4><p>WordPress / WooCommerce website</p><strong>Live Website ↗</strong>
+            </a>
+            <a className="client-card" href="https://sreepanchamis.in/" target="_blank" rel="noopener noreferrer">
+              <span>07</span><h4>Sree Panchamis</h4><p>Products + product information section</p><strong>Live Website ↗</strong>
+            </a>
+            <a className="client-card" href="https://panchamiveda.com/" target="_blank" rel="noopener noreferrer">
+              <span>08</span><h4>Panchami Veda</h4><p>Products + product information section</p><strong>Live Website ↗</strong>
+            </a>
+          </div>
+        </div>
+
+        <div className="client-category">
+          <div className="client-category-heading">
+            <span>02</span>
+            <h3>Franchise Websites</h3>
+          </div>
+
+          <div className="client-grid">
+            <a className="client-card" href="https://timepausefranchise.com/" target="_blank" rel="noopener noreferrer"><span>01</span><h4>Time Pause</h4><p>Franchise website</p><strong>Live Website ↗</strong></a>
+            <a className="client-card" href="http://grillsandkebabsfranchise.com/" target="_blank" rel="noopener noreferrer"><span>02</span><h4>Grills &amp; Kebabs</h4><p>Franchise website</p><strong>Live Website ↗</strong></a>
+            <a className="client-card" href="https://secretwondersfranchise.com/" target="_blank" rel="noopener noreferrer"><span>03</span><h4>Secret Wonders</h4><p>Franchise website</p><strong>Live Website ↗</strong></a>
+            <a className="client-card" href="https://teaglassfranchise.com/" target="_blank" rel="noopener noreferrer"><span>04</span><h4>Tea Glass</h4><p>Franchise website</p><strong>Live Website ↗</strong></a>
+            <a className="client-card" href="https://woowwafflesfranchise.com/" target="_blank" rel="noopener noreferrer"><span>05</span><h4>Woow Waffles</h4><p>Franchise website</p><strong>Live Website ↗</strong></a>
+            <a className="client-card" href="https://tribalmomosfranchise.com/" target="_blank" rel="noopener noreferrer"><span>06</span><h4>Tribal Momos</h4><p>Franchise website</p><strong>Live Website ↗</strong></a>
+            <a className="client-card" href="https://idlydosasambarfranchise.com/" target="_blank" rel="noopener noreferrer"><span>07</span><h4>Idly Dosa Sambar</h4><p>Franchise website</p><strong>Live Website ↗</strong></a>
+          </div>
+        </div>
+
+        <div className="client-category">
+          <div className="client-category-heading">
+            <span>03</span>
+            <h3>Corporate / Business</h3>
+          </div>
+
+          <div className="client-grid single-client">
+            <a className="client-card" href="https://vighagroups.com/" target="_blank" rel="noopener noreferrer">
+              <span>01</span><h4>Vigha Groups</h4><p>Corporate / business website</p><strong>Live Website ↗</strong>
+            </a>
+          </div>
+        </div>
+
+      </section>
+
+
+      {/* ================= TRAINING ================= */}
+
+      <section
+        id="training"
+        className="section training-section"
+      >
+
+        <div className="section-heading">
+          <p>05 — TRAINING &amp; INTERNSHIP</p>
+          <h2>
+            Learning and
+            <br />
+            <span>growth.</span>
+          </h2>
+        </div>
+
+        <div className="training-grid">
+
+          <article className="training-card">
+            <div className="training-card-top">
+              <span className="training-number">01</span>
+              <span className="training-label">INTERNSHIP · 1 MONTH</span>
+            </div>
+
+            <div className="training-card-content">
+              <h3>Web Development Internship</h3>
+              <p>
+                Gained hands-on experience in HTML, CSS, JavaScript and Bootstrap,
+                and developed basic responsive web pages while learning practical
+                web development workflows.
+              </p>
+            </div>
+          </article>
+
+          <article className="training-card">
+            <div className="training-card-top">
+              <span className="training-number">02</span>
+              <span className="training-label">WEB DEVELOPMENT COURSE</span>
+            </div>
+
+            <div className="training-card-content">
+              <h3>Dream High Institute and Technology</h3>
+              <p className="training-date">June 2025 — August 2025</p>
+              <p>
+                Completed hands-on training in HTML, CSS, JavaScript, Bootstrap,
+                jQuery, React, PHP, SQL and WordPress, with practical projects
+                focused on responsive web development.
+              </p>
+            </div>
+          </article>
 
         </div>
 
@@ -336,7 +505,7 @@ function App() {
 
         <div className="section-heading">
 
-          <p>04 — PROJECTS</p>
+          <p>06 — PROJECTS</p>
 
           <h2>
             Selected
@@ -391,13 +560,13 @@ function App() {
                   HTML · CSS · Bootstrap
                 </span>
 
-                <a
-                  href="https://github.com/SanthiyaJega567/Techtune-staticwebsite"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  GitHub ↗
-                </a>
+               <a 
+  href="https://santhiyajega567.github.io/Techtune-staticwebsite/" 
+  target="_blank" 
+  rel="noopener noreferrer" 
+>
+  Live Demo ↗
+</a>
 
               </div>
 
@@ -448,12 +617,12 @@ function App() {
                 </span>
 
                 <a
-                  href="https://github.com/SanthiyaJega567/woodora-dynamicwebsite"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  GitHub ↗
-                </a>
+  href="https://santhiyajega567.github.io/woodora-dynamicwebsite/"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Live Demo ↗
+</a>
 
               </div>
 
@@ -526,7 +695,7 @@ function App() {
       >
 
         <p>
-          05 — CONTACT
+          07 — CONTACT
         </p>
 
 
@@ -570,7 +739,7 @@ function App() {
         </p>
 
         <p>
-          Frontend Developer
+          Web Developer & WordPress Developer
         </p>
 
       </footer>

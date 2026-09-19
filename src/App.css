@@ -595,7 +595,7 @@ a {
   margin-top: 75px;
 
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 
   border-top: 1px solid var(--line);
   border-left: 1px solid var(--line);
@@ -1194,5 +1194,257 @@ footer {
 
   footer {
     padding: 22px 5%;
+  }
+}
+
+/* =========================
+   EXPERIENCE LIST
+========================= */
+
+.experience-list {
+  max-width: 760px;
+  margin-top: 24px;
+  padding-left: 20px;
+  color: #777;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+.experience-list li {
+  margin-bottom: 5px;
+}
+
+/* =========================
+   CLIENT WORK
+========================= */
+
+.client-work-section {
+  background: var(--bg-soft);
+}
+
+.client-work-intro {
+  max-width: 680px;
+  margin-top: 45px;
+  color: #777;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+.client-category {
+  margin-top: 80px;
+}
+
+.client-category-heading {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.client-category-heading span {
+  color: #555;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.client-category-heading h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.client-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.client-card {
+  min-height: 190px;
+  padding: 26px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: #0d0d0d;
+  transition: 0.35s ease;
+}
+
+.client-card:hover {
+  background: white;
+  color: black;
+  transform: translateY(-4px);
+}
+
+.client-card > span {
+  color: #555;
+  font-size: 10px;
+}
+
+.client-card h4 {
+  margin-top: 32px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 24px;
+}
+
+.client-card p {
+  margin-top: 8px;
+  color: #777;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.client-card strong {
+  display: inline-block;
+  margin-top: 18px;
+  color: #aaa;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.client-card:hover p,
+.client-card:hover strong {
+  color: #555;
+}
+
+.single-client {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+/* =========================
+   TRAINING & INTERNSHIP
+========================= */
+
+.training-section {
+  background: var(--bg);
+}
+
+.training-section .section-heading {
+  position: relative;
+  z-index: 1;
+}
+
+.training-grid {
+  margin-top: 90px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  align-items: stretch;
+}
+
+.training-card {
+  min-height: 330px;
+  padding: 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid var(--line);
+  background: #0d0d0d;
+  transition: 0.35s ease;
+}
+
+.training-card:hover {
+  border-color: #555;
+  transform: translateY(-6px);
+}
+
+.training-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.training-number {
+  color: #444;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 42px;
+  line-height: 1;
+}
+
+.training-label {
+  color: #666;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-align: right;
+  line-height: 1.5;
+}
+
+.training-card-content {
+  margin-top: 60px;
+}
+
+.training-card h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.training-card-content > p:not(.training-date) {
+  margin-top: 18px;
+  color: #777;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.training-date {
+  margin-top: 10px;
+  color: #999;
+  font-size: 12px;
+}
+
+@media (max-width: 1000px) {
+  .client-grid,
+  .training-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .client-work-intro {
+    margin-top: 35px;
+  }
+
+  .client-category {
+    margin-top: 55px;
+  }
+
+  .client-category-heading {
+    align-items: flex-start;
+  }
+
+  .client-category-heading h3 {
+    font-size: 23px;
+  }
+
+  .client-card,
+  .training-card {
+    padding: 25px;
+  }
+
+  .experience-list {
+    font-size: 13px;
+  }
+
+  .training-grid {
+    margin-top: 55px;
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .training-card {
+    min-height: 280px;
+    padding: 25px;
+  }
+
+  .training-card-top {
+    gap: 12px;
+  }
+
+  .training-card-content {
+    margin-top: 45px;
+  }
+
+  .training-card h3 {
+    font-size: 24px;
   }
 }
