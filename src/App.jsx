@@ -62,7 +62,7 @@ function App() {
           <div className="hero-buttons">
 
             <a
-              href="#client-Work"
+              href="#client-work"
               className="main-button"
             >
               <span>View My Work</span>
